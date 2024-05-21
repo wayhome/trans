@@ -56,7 +56,7 @@ with tab1:
             
             try:
                 response = client.chat.completions.create(
-                    model=os.getenv('OPEN_API_MODEL'),
+                    model=os.getenv('OPENAI_MODEL_NAME'),
                     messages=[
                         {"role": "system", "content": "你是一个语气转化修饰器，可以将用户的想法转换为不同的语气和风格"},
                         {"role": "user", "content": prompt}
